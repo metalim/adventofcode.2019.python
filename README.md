@@ -19,7 +19,7 @@ While Python resembles CoffeeScript - my favorite language so far (*well, vice v
     <code_true> if <condition>
     # or
     if <condition> then <code_true> else <code_false>
-    
+
     # and for nested
     if <cond_1> then <true_1> else if <cond_2> then <false_1_true_2> else <false_1_false_2>
     ```
@@ -61,4 +61,10 @@ While Python resembles CoffeeScript - my favorite language so far (*well, vice v
         else:
             # inner loop completed without breaking
             <code>
+    ```
+
+* Numbers in Python are not just arbitrary precision floating point bignums, but complex numbers as well. I like how writing both parts is optional. Makes it easier to define directions in 2D:
+
+    ```python
+    ds = [1, 1j, -1, -1j] # for Right, Up, Left, Down.
     ```
