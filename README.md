@@ -3,6 +3,12 @@
 This year I'll be using AoC to learn Python.
 As my goal is more Deep Learning, than Python programming itself, I'll be doing AoC in Jupyter Notebook.
 
+Goals:
+
+* Learn Python tricks.
+* Learn Jupyter Notebook tricks.
+* Make it look pretty on GitHub.
+
 ## Quirks & tricks
 
 While Python resembles CoffeeScript - my favorite language so far (*well, vice versa in reality: CoffeeScript resembles Python*), Python has many legacy design decisions you have to adapt to. To name a few:
