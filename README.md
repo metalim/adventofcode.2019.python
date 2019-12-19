@@ -1,7 +1,7 @@
-# Advent of Code 2019 in Python / Jupyter
+# Advent of Code 2019 in Python / Jupyter Notebook
 
-This year I'll be using AoC to learn Python.
-As my goal is more Deep Learning, than Python programming itself, I'll be doing AoC in Jupyter Notebook.
+This year I'll be using [Advent of Code](https://adventofcode.com/2019/) to learn [Python](https://www.python.org/).
+As my goal is more Deep Learning, than Python programming itself, I'll be doing AoC in [Jupyter Notebook](https://jupyter.org/).
 
 Goals:
 
@@ -11,7 +11,7 @@ Goals:
 
 ## Quirks & tricks
 
-While Python resembles CoffeeScript - my favorite language so far (*well, vice versa in reality: CoffeeScript resembles Python*), Python has many legacy design decisions you have to adapt to. To name a few:
+While Python resembles [CoffeeScript](https://coffeescript.org/) - my favorite language so far (*well, vice versa in reality: CoffeeScript resembles Python*), Python has many legacy design decisions you have to adapt to. To name a few:
 
 * Order of blocks in short form of `if`:
 
