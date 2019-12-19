@@ -104,3 +104,15 @@ While Python resembles [CoffeeScript](https://coffeescript.org/) - my favorite l
   * [Go](https://github.com/metalim/metalim.adventofcode.2016.go), done in January 2019, incomplete.
 * 2015:
   * [CoffeeScript](https://github.com/metalim/metalim.adventofcode.2015), done in December 2017.
+
+## Useful links
+
+* [Advent of Code](https://adventofcode.com/) - obviously.
+  * [Scatterplot](http://www.maurits.vdschee.nl/scatterplot/) - timings of first 100 solvers for all AoC tasks.
+  * [r/adventofcode](https://www.reddit.com/r/adventofcode/) - subreddit with solutions and discussions. [Visualizations](https://www.reddit.com/r/adventofcode/search?q=flair_name%3A%22Visualization%22&restrict_sr=1&sort=new) are nice.
+
+* Other challenges/exercises:
+  * [Exercism](https://exercism.io/) - exercises in many language tracks. Submit code. Can see other solutions. Can request mentor.
+  * [Codewars](https://www.codewars.com/) - programming tasks in many languages. Submit code. Can see other solutions.
+  * [Project Euler](https://projecteuler.net/) - probably the oldest programming challenge resource. Submit answers.
+  * Will not include link to Topcoder, as their website now looks like marketing sh↓t. Never used.
