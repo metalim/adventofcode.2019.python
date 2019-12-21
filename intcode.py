@@ -84,3 +84,49 @@ def run(mem):
         else:
             raise Exception('Unknown opcode', op)
             break
+
+def readASCII(proc):
+    s = ''
+    try:
+        q = next(proc)
+        while q!=None:
+            if s==10:
+                print(s)
+                s = ''
+            else:
+                s += chr(q)
+            q = next(proc)
+    except StopIteration:
+        print('stopped')
+        pass
+
+    if len(s)>0:
+        print(s)
+        s = ''
+
+    return q
+
+def sendASCII(proc, txt):
+    print(txt)
+    s = ''
+    try:
+        for c in txt:
+            q = proc.send(ord(c))
+        while q!=None:
+            if q==10:
+                print(s)
+                s = ''
+            else:
+                if q>0x110000:
+                    print('got number', q)
+                else:
+                    s += chr(q)
+            q = next(proc)
+    except StopIteration:
+        print('stopped')
+        pass
+
+    if len(s)>0:
+        print(s)
+        s = ''
+    return q
