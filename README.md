@@ -88,6 +88,30 @@ While Python resembles [CoffeeScript](https://coffeescript.org/) - my favorite l
   D = B | {1} # == {1,3,4,5}
   ```
 
+* Python doesn't allow assignment operations in `if`. Following is not possible:
+
+  ```python
+  for s in input.split('\n'):
+      if (match = re.match(r'some number: (-?\d+)', s)) != None:
+          # do something with match.group(1)
+      elif (match = re.match(r'something else: (.+)', s)) != None:
+          # do something with match.group(1)
+  ```
+
+  Instead you have to write something like:
+
+  ```python
+  for s in input.split('\n'):
+      match = re.match(r'some number: (-?\d+)', s)
+      if match != None:
+          # do something with match.group(1)
+          continue
+      match = re.match(r'something else: (.+)', s)
+      if match != None:
+          # do something with match.group(1)
+          continue
+  ```
+
 ## All years AoC solutions
 
 * 2020:
