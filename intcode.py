@@ -24,30 +24,31 @@ def run(mem):
             x = get(1,c)
             y = get(2,b)
             p = get(3,a)
-            if TRACE: print(f'{i}: {mem[x]}+{mem[y]}={mem[x] + mem[y]} @ {p}')
+            if TRACE: print(f'{i}: {mem[x]}+{mem[y]}={mem[x] + mem[y]} => {p} ({mem[p]})')
             mem[p] = mem[x] + mem[y]
             i += 4
         elif op == 2:
             x = get(1,c)
             y = get(2,b)
             p = get(3,a)
-            if TRACE: print(f'{i}: {mem[x]}*{mem[y]}={mem[x] * mem[y]} @ {p}')
+            if TRACE: print(f'{i}: {mem[x]}*{mem[y]}={mem[x] * mem[y]} => {p} ({mem[p]})')
             mem[p] = mem[x] * mem[y]
             i += 4
         elif op == 3:
             p = get(1,c)
+            if TRACE: print(f'{i}: request ? => {p}')
             mem[p] = yield
-            if TRACE: print(f'{i}: input {mem[p]} @ {p}')
+            if TRACE: print(f'{i}: store {mem[p]} => {p}')
             i += 2
         elif op == 4:
             p = get(1,c)
-            if TRACE: print(f'{i}: out {mem[p]} @ {p}')
+            if TRACE: print(f'{i}: out {mem[p]} <- {p}')
             yield mem[p]
             i += 2
         elif op == 5:
             x = get(1,c)
             y = get(2,b)
-            if TRACE: print(f'{i}: if {mem[x]} jump {mem[y]}')
+            if TRACE: print(f'{i}: if ({mem[x]} @ {x}) jump {mem[y]} @ {y}')
             if mem[x]:
                 i = mem[y]
             else:
@@ -55,7 +56,7 @@ def run(mem):
         elif op == 6:
             x = get(1,c)
             y = get(2,b)
-            if TRACE: print(f'{i}: if not {mem[x]} jump {mem[y]}')
+            if TRACE: print(f'{i}: if not ({mem[x]} @ {x}) jump {mem[y]} @ {y}')
             if not mem[x]:
                 i = mem[y]
             else:
