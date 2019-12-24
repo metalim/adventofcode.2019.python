@@ -88,7 +88,7 @@ While Python resembles [CoffeeScript](https://coffeescript.org/) - my favorite l
   D = B | {1} # == {1,3,4,5}
   ```
 
-* Python doesn't allow assignment operations in `if`. Following is not possible:
+* Python doesn't allow inline assignment operations. Following is not possible:
 
   ```python
   for s in input.split('\n'):
@@ -110,6 +110,16 @@ While Python resembles [CoffeeScript](https://coffeescript.org/) - my favorite l
       if match != None:
           # do something with match.group(1)
           continue
+  ```
+
+  That's no longer true in Python 3.8, where you can use special "walrus operator" `:=`, introduced especially for inline assignments:
+
+  ```python
+  for s in input.split('\n'):
+      if (match := re.match(r'some number: (-?\d+)', s)) != None:
+          # do something with match.group(1)
+      elif (match := re.match(r'something else: (.+)', s)) != None:
+          # do something with match.group(1)
   ```
 
 ## All years AoC solutions
@@ -136,7 +146,7 @@ While Python resembles [CoffeeScript](https://coffeescript.org/) - my favorite l
   * [r/adventofcode](https://www.reddit.com/r/adventofcode/) - subreddit with solutions and discussions. [Visualizations](https://www.reddit.com/r/adventofcode/search?q=flair_name%3A%22Visualization%22&restrict_sr=1&sort=new) are nice.
 
 * Other challenges/exercises:
-  * [Exercism](https://exercism.io/) - exercises in many language tracks. Submit code. Can see other solutions. Can request mentor.
-  * [Codewars](https://www.codewars.com/) - programming tasks in many languages. Submit code. Can see other solutions.
-  * [Project Euler](https://projecteuler.net/) - probably the oldest programming challenge resource. Submit answers.
-  * Will not include link to Topcoder, as their website now looks like marketing sh↓t. Never used.
+  * [Exercism](https://exercism.io/) - exercises in many language tracks. Submit code. Can see other solutions. Tasks are mostly trivial. Can request mentor to improve you coding style. I was very satisfied with Go mentor *bitfield*.
+  * [Codewars](https://www.codewars.com/) - programming tasks in many languages. Submit code. Can see other solutions. 1 kyu (hardest level) katas often question your understanding of language internals.
+  * [Project Euler](https://projecteuler.net/) - probably the oldest programming challenge resource. Heavily math-based. Submit answers.
+  * Will not include link to Topcoder, as their website now looks like marketing sh↓t. Never used, probably never will.
