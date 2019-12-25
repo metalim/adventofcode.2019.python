@@ -143,10 +143,13 @@ While Python resembles [CoffeeScript](https://coffeescript.org/) - my favorite l
 
 * [Advent of Code](https://adventofcode.com/) - obviously.
   * [Scatterplot](http://www.maurits.vdschee.nl/scatterplot/) - timings of first 100 solvers for all AoC tasks.
+  * [Medals](http://www.maurits.vdschee.nl/scatterplot/medals.html) - top 3 positions for each task.
   * [r/adventofcode](https://www.reddit.com/r/adventofcode/) - subreddit with solutions and discussions. [Visualizations](https://www.reddit.com/r/adventofcode/search?q=flair_name%3A%22Visualization%22&restrict_sr=1&sort=new) are nice.
 
 * Other challenges/exercises:
   * [Exercism](https://exercism.io/) - exercises in many language tracks. Submit code. Can see other solutions. Tasks are mostly trivial. Can request mentor to improve you coding style. I was very satisfied with Go mentor *bitfield*.
   * [Codewars](https://www.codewars.com/) - programming tasks in many languages. Submit code. Can see other solutions. 1 kyu (hardest level) katas often question your understanding of language internals.
   * [Project Euler](https://projecteuler.net/) - probably the oldest programming challenge resource. Heavily math-based. Submit answers.
+  * [CodinGame](https://www.codingame.com/) - programming tasks in many languages. Submit code and see resulting animation. Can see ofther solutions. Has bot battles, if you want competition.
+  * [CodeForces](https://codeforces.com/) - coding contests several times a month. Similar to IT Olympics/Olympiads, but online. Can solve tasks in archive, if you don't want competition. Can participate in Virtual contests, if you want competition, but contest is over.
   * Will not include link to Topcoder, as their website now looks like marketing sh↓t. Never used, probably never will.
