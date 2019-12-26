@@ -109,11 +109,13 @@ def readASCII(proc):
 
 def sendASCII(proc, txt):
     print(txt)
+    out = ''
     s = ''
     try:
         for c in txt:
             q = proc.send(ord(c))
         while q!=None:
+            out += chr(q)
             if q==10:
                 print(s)
                 s = ''
@@ -130,4 +132,4 @@ def sendASCII(proc, txt):
     if len(s)>0:
         print(s)
         s = ''
-    return q
+    return q or out
